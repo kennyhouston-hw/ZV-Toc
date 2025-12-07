@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tocContainer = document.createElement('div');
     tocContainer.id = 'table-of-contents';
     tocContainer.setAttribute('aria-labelledby', 'toc-main-header');
-    tocContainer.innerHTML = `<span id="toc-main-header" class="toc-header">В этой статье:</span>`;
+    tocContainer.innerHTML = `<span id="toc-main-header" class="toc-header">Содержание:</span>`;
     const tocList = document.createElement('ul');
     tocContainer.appendChild(tocList);
     headers.forEach((header, index) => {
