@@ -1,41 +1,36 @@
     #toc {
         position: relative;
-        margin-top: -24px;
+        margin-top: 24px;
     }
 
     #table-of-contents {
         position: relative;
         margin: 0 auto;
-        max-width: 696px;
-        background-color: #fff;
-        padding: 16px;
-        border-radius: 16px;
-/*         border: 1px solid #ebebeb; */
-        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+        max-width: 760px;
         font-family: 'Manrope', sans-serif;
     }
     
     @media screen and (max-width: 959px) {
         #table-of-contents {
-            max-width: 556px;
+            max-width: 600px;
         }
     }
 
     @media screen and (max-width: 639px) {
         #table-of-contents {
             max-width: 100%;
-            margin: 0 24px 0 24px;
+            margin: 0 20px 0 20px;
         }
     }
 
     #table-of-contents .toc-header {
         display: block;
         padding: 8px 8px 12px 8px;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 24px;
         font-weight: 600;
-        color: #262626;
-        font-family:'Unbounded', serif;
+        color: #1f2937;
+        font-family:'DaysOne';
     }
 
     #table-of-contents ul {
@@ -53,7 +48,7 @@
 
     #table-of-contents a {
         text-decoration: none;
-        color: #262626;
+        color: #1f2937;
         transition: color 0.3s ease, opacity 0.3s ease;
         font-family: 'Manrope', sans-serif;
         font-weight: 400;
