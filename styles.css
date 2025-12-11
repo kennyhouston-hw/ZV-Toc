@@ -32,7 +32,7 @@
         font-size: 24px;
         line-height: 28px;
         font-weight: 400;
-        color: #1f2937;
+        color: #000000;
         font-family:'DaysOne';
     }
 
@@ -51,7 +51,7 @@
 
     #table-of-contents a {
         text-decoration: none;
-        color: #1f2937;
+        color: #000000;
         transition: color 0.3s ease, opacity 0.3s ease;
         font-family: 'Manrope', sans-serif;
         font-weight: 400;
@@ -59,7 +59,7 @@
         font-size: 15px;
         line-height: 20px;
         letter-spacing:0.15px;
-        opacity: 0.75;
+        opacity: 0.6;
     }
 
     #table-of-contents a:hover {
