@@ -1,39 +1,68 @@
     #toc {
         position: relative;
-        margin-top: 24px;
+        margin: 24px auto 16px auto;
+        max-width: 760px;
     }
 
     #table-of-contents {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 8px;
         margin: 0 auto;
-        max-width: 760px;
-        padding:24px 0;
+        padding:24px;
         font-family: 'Manrope', sans-serif;
-        border-top:1px solid #e5e5e5;
-        border-bottom:1px solid #e5e5e5;
-    }
-    
-    @media screen and (max-width: 959px) {
-        #table-of-contents {
-            max-width: 600px;
-        }
+        background-color: #f8f8f8;
+        border-radius: 20px;
     }
 
-    @media screen and (max-width: 639px) {
-        #table-of-contents {
-            max-width: 100%;
-            margin: 0 20px 0 20px;
-        }
+    .toc-header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #table-of-contents .toc-header {
         display: block;
-        padding: 0px 8px 12px 8px;
         font-size: 24px;
         line-height: 28px;
-        font-weight: 400;
         color: #000000;
-        font-family:'DaysOne';
+        font-family: 'DaysOne';
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .toc-toggle-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        border-radius: 99px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJtNyAxMGw1IDVsNS01Ii8+PC9zdmc+');
+    }
+
+    .toc-toggle-expanded {
+        transform: rotate(0deg);
+    }
+
+    .toc-toggle-collapsed {
+        transform: rotate(-90deg);
+    }
+
+    .toc-toggle-btn:hover {
+        opacity: 1;
     }
 
     #table-of-contents ul {
@@ -42,10 +71,31 @@
         margin: 0;
     }
 
+    .toc-list-expanded {
+        max-height: 1000px;
+        overflow: visible;
+        display: block;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        opacity: 1;
+    }
+
+    .toc-list-collapsed {
+        max-height: 0;
+        overflow: hidden;
+        display: none;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #table-of-contents .toc-sublist {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 8px;
+    }
+
     #table-of-contents li {
-        padding: 2px 8px;
-        border-radius: 0 8px 8px 0;
-        margin-bottom: 4px;
+        padding: 0;
         transition: background-color 0.3s ease, border-color 0.3s ease;
     }
 
@@ -59,26 +109,43 @@
         font-size: 15px;
         line-height: 20px;
         letter-spacing:0.15px;
-        opacity: 0.6;
+        opacity: 0.5;
     }
 
     #table-of-contents a:hover {
         opacity: 1;
-        text-decoration: underline;
     }
 
     .toc-level-2 {
-        margin-left: 0;
+        margin: 8px 0 0 0;
     }
 
     .toc-level-3 {
-        margin-left: 12px;
-    }
-
-    #table-of-contents li.active {
-        font-weight:500;
+        margin: 8px 0 0 12px;
     }
 
     #table-of-contents li.active > a {
+        font-weight:500;
         opacity: 1;
+    }
+
+    @media screen and (max-width:1200px) {
+        #toc {
+            max-width: 620px;
+        }
+    }
+
+    @media screen and (max-width:960px) {
+        #toc {
+            max-width: 600px;        
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        #toc {
+            max-width: calc(100% - 40px);
+        }
+        #table-of-contents {
+            padding:20px;
+        }
     }
