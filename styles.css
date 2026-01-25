@@ -146,7 +146,7 @@
             max-width: calc(100% - 40px);
         }
         #table-of-contents {
-            padding:20px;
+            padding:20px 0;
         }
         #table-of-contents .toc-header {
             font-size: 20px;
