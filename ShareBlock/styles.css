@@ -1,0 +1,83 @@
+.date_share_container{
+        display:flex;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 24px 0;
+    }
+    
+    .date_share {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .date_share-wrapper {
+        display: flex;
+        gap:4px;
+        align-items: center;
+    }
+    
+    .date-text{
+        font-family: 'Manrope',Arial,sans-serif;
+        font-size:15px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.6);
+        letter-spacing: 0.25px;
+        display: flex;
+        gap:4px;
+        align-items: center;
+    }
+    
+    .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more {
+        border: 0 !important;
+        background-color: #f5f5f5 !important;
+    }
+    
+    .ya-share2__list.ya-share2__list_direction_horizontal {
+        margin: 0 !important;
+        padding-left: 12px !important;
+    }
+    
+    .ya-share2__list.ya-share2__list_direction_horizontal > .ya-share2__item {
+        margin:0 !important;
+    }
+    
+    div.ya-share2.ya-share2_inited > div > ul > li > a > span.ya-share2__title {
+        display: none !important;
+    }
+    
+    .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPgoJPHBhdGggZmlsbD0iIzFmMjkzNyIgZD0ibTIzNy42NiAxMTcuNjZsLTgwIDgwQTggOCAwIDAgMSAxNDQgMTkydi0zOS43N2MtNTcuMSAzLjI0LTk2LjI1IDQwLjI3LTEwNy4yNCA1MmExMiAxMiAwIDAgMS0yMC42OC05LjU4YzMuNzEtMzIuMjYgMjEuMzgtNjMuMjkgNDkuNzYtODcuMzdjMjMuNTctMjAgNTIuMjItMzIuNjkgNzguMTYtMzQuOTFWMzJhOCA4IDAgMCAxIDEzLjY2LTUuNjZsODAgODBhOCA4IDAgMCAxIDAgMTEuMzIiIC8+Cjwvc3ZnPg==')
+    }
+    
+    .ya-share2__container_size_m .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more {
+        padding: 4px !important;
+    }
+    
+    .ya-share2__container_size_m .ya-share2__popup:not(.ya-share2__popup_mobile) .ya-share2__item {
+        padding: 6px 8px !important;
+        border-radius: 2px;
+    }
+    
+    .ya-share2__container_size_m .ya-share2__popup:not(.ya-share2__popup_mobile) > :last-child:not(:empty):not(.ya-share2__copied-tooltip) {
+        padding: 4px !important;
+    }
+    
+    @media screen and (max-width:1200px) {
+        .date_share_container {
+            max-width: 620px;
+        }
+    }
+    
+    @media screen and (max-width:960px) {
+        .date_share_container {
+            max-width: 600px;
+        }
+    }
+    
+    @media screen and (max-width:640px){
+        .date_share_container {
+            max-width: calc(100% - 40px)
+        }
+    }
