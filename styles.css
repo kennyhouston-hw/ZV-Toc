@@ -28,7 +28,7 @@
         font-size: 18px;
         line-height: 1;
         color: #000000;
-        font-family: 'Marope';
+        font-family: 'Manrope', sans-serif;
         font-weight: 600;
         font-style: normal;
         letter-spacing: -0.1px;
@@ -126,7 +126,6 @@
     }
 
     #table-of-contents li.active > a {
-        font-weight:500;
         opacity: 1;
     }
 
