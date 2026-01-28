@@ -25,12 +25,13 @@
 
     #table-of-contents .toc-header {
         display: block;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 1;
         color: #000000;
-        font-family: 'DaysOne';
-        font-weight: 400;
+        font-family: 'Marope';
+        font-weight: 600;
         font-style: normal;
+        letter-spacing: -0.1px;
     }
 
     .toc-toggle-btn {
@@ -147,8 +148,5 @@
         }
         #table-of-contents {
             padding:20px 0;
-        }
-        #table-of-contents .toc-header {
-            font-size: 20px;
         }
     }
